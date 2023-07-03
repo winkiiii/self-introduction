@@ -1,0 +1,155 @@
+*{
+  font-family:標楷體字型;
+  font-size:14px;
+}
+html,body{
+  background: linear-gradient(#E7C7B2 0%,#C7BCE5 35%, #69C3C9 90%);
+  width:100%;
+  height:100%;
+/*以下這三行，為置中 */
+  display:flex;
+  justify-content:center;/*左右置中*/
+  align-items:center;/*上下置中*/
+}
+.card{
+  display:flex; /*一開始需要在父層宣告為 flex 才有效*/
+  width:600px;
+  height:400px;
+  background: #C9BEB2;
+  color:#574D45;
+  border-radius:10px;
+  box-shadow:0px 0px 50px rgba(0,0,0,0.5);
+  transition:0.5s;
+  position:relative;
+}
+.card:hover{
+  box-shadow:5px 5px 80px rgba(0,0,0,0.8);
+  transform:scale(1.2,1.2);
+}
+a: {
+  color: initial;
+  text-decoration: initial;
+}
+.left{
+  flex:1; /*對應子層加上*/
+  width:200px;
+  height:400px;
+  position:relative;
+}
+.right{
+  flex:1; /*對應子層加上；1數值是內元件之間佔的比例*/
+  justify-content:center;
+  width:300px;
+  height:400px;
+  padding: 5px 20px 20px 20px;
+  position:relative;
+ 
+}
+img{
+  width: 290px;
+  height: 400px;
+  opacity:90%;
+  border-radius:10px;
+}
+.left .name{
+  position: absolute;
+  margin:0; /*沒輸入這行，會因為h3預設與下框有距離*/
+  bottom: 0px;
+  padding: 5px 15px;
+  font-size:24px;
+  letter-spacing: 5px; /*字間距離調大*/ 
+  color:#FACD85;
+  border-radius:10px;
+  background:linear-gradient(transparent 0%,black 100%);
+  width:105%;
+  padding:15px;
+  box-sizing:border-box;
+}
+ul li h3{
+  line-height:20px;
+  background-color: #BCA794;
+  color:#574D45;
+  border-radius:10px;
+  overflow:hidden;
+  padding:5px 10px;
+}
+ul li h4{
+  font-size:10px;
+  line-height:10px;
+}
+.smallText{
+  font-size:16px;
+}
+.cirbutton1{
+  width:15px;
+  height:30px;
+  background: #BCA794;
+  border-radius:30%;
+  position: absolute;
+  right:-30px;
+  bottom:100px;
+}
+.cirbutton2{
+  width:15px;
+  height:30px;
+  background: #B29D8B;
+  border-radius:30%;
+  position: absolute;
+  right:-30px;
+  bottom:180px;
+}
+.cirbutton3{
+  width:15px;
+  height:30px;
+  background: #B29D8B;
+  border-radius:30%;
+  position: absolute;
+  right:-30px;
+  bottom:260px;
+}
+.cirbutton4{
+  width:15px;
+  height:30px;
+  background: #B29D8B;
+  border-radius:30%;
+  position: absolute;
+  right:-30px;
+  bottom:340px;
+}
+.buttons{
+  margin-top:30px;
+  justify-content:center;/*左右置中*/
+}
+.buttons .btn.work{
+  float:left;
+  color: initial;
+  text-decoration: initial;
+  justify-content:center;
+  display: inline-block;
+  border: solid 2px black;
+  padding:10px 25px;
+  letter-spacing:1px;
+  background-color:#80727B;
+  color:#B9D2B1;
+  border-radius:20px;
+}
+.buttons .btn.mail{
+  float:right;
+  color: initial;
+  text-decoration: initial;
+  justify-content:center;
+  display: inline-block;
+  border: solid 2px black;
+  padding:10px 25px;
+  letter-spacing:2px;
+  background-color:#80727B;
+  color:#574D45;
+  border-radius:20px;
+}
+.buttons .btn:hover{
+  background-color:#804D5E;
+}
+ul{
+  list-style: none;
+  padding: 10; 
+}
